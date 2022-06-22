@@ -46,6 +46,12 @@ class Milestone: ObservableObject {
     @Published var unit: [String] = []
     /// Which index the button is currently at
     @Published var buttonIndex: Int = 0
+    /// Storage for name array
+    @Published var savedName: [String] = UserDefaults.standard.stringArray(forKey: "name") ?? []
+    /// Storage for time array
+    @Published var savedLength: [Int] = UserDefaults.standard.stringArray(forKey: "length") ?? []
+    /// Storage for descriptions array
+    @Published var savedDescriptions: [String] = UserDefaults.standard.stringArray(forKey: "description") ?? []
 }
 
 /// Directs user to MilestonesView or SteppingstonesView
