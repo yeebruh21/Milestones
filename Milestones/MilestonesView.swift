@@ -100,9 +100,14 @@ struct MilestonesView: View {
                 ZStack {
                     
                     // MARK: Custom colour
+                    Image("mountain2")
+                        .resizable()
+                        .opacity(0.8)
+                        .ignoresSafeArea()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
                     Rectangle()
                         .foregroundColor(Color(red: 151/255, green: 245/255, blue: 234/255))
-                        .opacity(0.6)
+                        .opacity(0.5)
                         .ignoresSafeArea()
                         .frame(width: geometry.size.width, height: geometry.size.height)
                     VStack {
@@ -224,7 +229,7 @@ struct MilestonesView: View {
                                                     Text(milestones.descriptions[index])
                                                     Rectangle()
                                                         .foregroundColor(.white)
-                                                        .frame(width: 210, height: 65)
+                                                        .frame(width: 318, height: 65)
                                                 }
                                                 .onTapGesture {
                                                     self.descriptionToggle = false

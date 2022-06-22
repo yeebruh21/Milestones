@@ -23,7 +23,11 @@ struct SteppingStonesView: View {
                 ZStack {
                     
                     // MARK: Custom colour
-                    
+                    Image("steppingstones")
+                        .resizable()
+                        .opacity(0.8)
+                        .ignoresSafeArea()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
                     Rectangle()
                         .foregroundColor(Color(red: 193/255, green: 235/255, blue: 253/255))
                         .opacity(0.6)
@@ -61,82 +65,26 @@ struct SteppingStonesView: View {
                         // MARK: Milestone rectangles
                         ScrollView {
                             LazyVStack {
-                                ZStack {
-                                    Rectangle()
-                                        .foregroundColor(.white)
-                                        .frame(width: 318, height: 75)
-                                    Rectangle()
-                                        .foregroundColor(.black)
-                                        .frame(width: 5, height: 48)
-                                        .offset(y: 60)
-                                        .opacity(0.5)
-                                }
-                                .padding(.bottom, 20)
-                                ZStack {
-                                    Rectangle()
-                                        .foregroundColor(.white)
-                                        .frame(width: 318, height: 75)
-                                    Rectangle()
-                                        .foregroundColor(.black)
-                                        .frame(width: 5, height: 48)
-                                        .offset(y: 60)
-                                        .opacity(0.5)
-                                }
-                                .padding(.bottom, 20)
-                                ZStack {
-                                    Rectangle()
-                                        .foregroundColor(.white)
-                                        .frame(width: 318, height: 75)
-                                    Rectangle()
-                                        .foregroundColor(.black)
-                                        .frame(width: 5, height: 48)
-                                        .offset(y: 60)
-                                        .opacity(0.5)
-                                }
-                                .padding(.bottom, 20)
-                                ZStack {
-                                    Rectangle()
-                                        .foregroundColor(.white)
-                                        .frame(width: 318, height: 75)
-                                    Rectangle()
-                                        .foregroundColor(.black)
-                                        .frame(width: 5, height: 48)
-                                        .offset(y: 60)
-                                        .opacity(0.5)
-                                }
-                                .padding(.bottom, 20)
-                                
-                                // Final milestone
-                                
-                                ZStack {
-                                    Rectangle()
-                                        .foregroundColor(.yellow)
-                                        .frame(width: 342, height: 99)
-                                        .shadow(radius: 5)
-                                    Rectangle()
-                                        .foregroundColor(Color(red: 255/255, green: 230/255, blue: 100/255))
-                                        .frame(width: 2, height: 20)
-                                        .rotationEffect(.degrees(45))
-                                        .offset(x: 165, y: -42)
-                                    Rectangle()
-                                        .foregroundColor(Color(red: 255/255, green: 230/255, blue: 100/255))
-                                        .frame(width: 2, height: 20)
-                                        .rotationEffect(.degrees(-45))
-                                        .offset(x: -165, y: -42)
-                                    Rectangle()
-                                        .foregroundColor(Color(red: 255/255, green: 230/255, blue: 100/255))
-                                        .frame(width: 2, height: 20)
-                                        .rotationEffect(.degrees(45))
-                                        .offset(x: -165, y: 42)
-                                    Rectangle()
-                                        .foregroundColor(Color(red: 255/255, green: 230/255, blue: 100/255))
-                                        .frame(width: 2, height: 20)
-                                        .rotationEffect(.degrees(-45))
-                                        .offset(x: 165, y: 42)
-                                    Rectangle()
-                                        .foregroundColor(.white)
-                                        .frame(width: 318, height: 75)
-                                }
+                                Rectangle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 318, height: 75)
+                                    .padding(.bottom, 20)
+                                Rectangle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 318, height: 75)
+                                    .padding(.bottom, 20)
+                                Rectangle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 318, height: 75)
+                                    .padding(.bottom, 20)
+                                Rectangle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 318, height: 75)
+                                    .padding(.bottom, 20)
+                                Rectangle()
+                                    .foregroundColor(.white)
+                                    .frame(width: 318, height: 75)
+                                    .padding(.bottom, 20)
                             }
                         }
                         
