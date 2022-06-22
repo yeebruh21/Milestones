@@ -210,16 +210,20 @@ struct MilestonesView: View {
                                                         .offset(x: 165, y: 42)
                                                     Rectangle()
                                                         .foregroundColor(.white)
-                                                        .frame(width: 318, height: 75).onLongPressGesture(minimumDuration: 0.5) {
+                                                        .frame(width: 318, height: 75).onLongPressGesture(minimumDuration: 0.3) {
                                                             self.descriptionToggle = true
                                                         }
                                                 }
                                             }
                                             else {
                                                 ZStack {
+                                                    Text(milestones.descriptions[index])
                                                     Rectangle()
                                                         .foregroundColor(.white)
-                                                        .frame(width: 318, height: 75)
+                                                        .frame(width: 210, height: 65)
+                                                }
+                                                .onTapGesture {
+                                                    self.descriptionToggle = false
                                                 }
                                             }
                                             VStack {
@@ -337,6 +341,8 @@ struct MilestonesView: View {
                     
                     HStack {
                         List {
+                            Text("MENU")
+                                .bold()
                             Text("MILESTONES").onTapGesture {
                                 self.viewNum = 1
                             }

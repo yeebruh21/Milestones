@@ -14,6 +14,7 @@
 		310CA416286297F000BA7B6F /* AddMilestoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA415286297F000BA7B6F /* AddMilestoneView.swift */; };
 		310CA4182862980C00BA7B6F /* SteppingStonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA4172862980C00BA7B6F /* SteppingStonesView.swift */; };
 		310CA41A2862983800BA7B6F /* MenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA4192862983800BA7B6F /* MenuContent.swift */; };
+		310CA41C2862A66F00BA7B6F /* AddSteppingStoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA41B2862A66F00BA7B6F /* AddSteppingStoneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		310CA415286297F000BA7B6F /* AddMilestoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMilestoneView.swift; sourceTree = "<group>"; };
 		310CA4172862980C00BA7B6F /* SteppingStonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppingStonesView.swift; sourceTree = "<group>"; };
 		310CA4192862983800BA7B6F /* MenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContent.swift; sourceTree = "<group>"; };
+		310CA41B2862A66F00BA7B6F /* AddSteppingStoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSteppingStoneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				310CA407286297B100BA7B6F /* MilestonesApp.swift */,
 				310CA409286297B100BA7B6F /* MilestonesView.swift */,
 				310CA415286297F000BA7B6F /* AddMilestoneView.swift */,
+				310CA41B2862A66F00BA7B6F /* AddSteppingStoneView.swift */,
 				310CA4172862980C00BA7B6F /* SteppingStonesView.swift */,
 				310CA4192862983800BA7B6F /* MenuContent.swift */,
 				310CA40B286297BD00BA7B6F /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				310CA40A286297B100BA7B6F /* MilestonesView.swift in Sources */,
 				310CA416286297F000BA7B6F /* AddMilestoneView.swift in Sources */,
 				310CA41A2862983800BA7B6F /* MenuContent.swift in Sources */,
+				310CA41C2862A66F00BA7B6F /* AddSteppingStoneView.swift in Sources */,
 				310CA408286297B100BA7B6F /* MilestonesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

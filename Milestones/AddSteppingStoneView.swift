@@ -1,21 +1,18 @@
 //
-//  AddMilestoneView.swift
+//  AddSteppingstoneView.swift
 //  Milestones App
 //
-//  Created by Anthony Chen on 2022-06-10.
+//  Created by Anthony Chen on 2022-06-21.
 //
 
-import SwiftUI
+/*import SwiftUI
 
-struct AddMilestoneView: View {
-    @EnvironmentObject var milestones: Milestone
+struct AddSteppingStoneView: View {
+    @EnvironmentObject var steppingstones: Steppingstone
         
         @State private var newName: String = ""
         @State private var description: String = ""
-        @State private var length: Int = 1
-        @State private var unit: String = "Day(s)"
-        
-        @State private var units: [String] = ["Day(s)", "Week(s)", "Month(s)", "Year(s)"]
+        @State private var cycles: Int = 1
         
         var body: some View {
             GeometryReader { geometry in
@@ -32,7 +29,7 @@ struct AddMilestoneView: View {
                             .cornerRadius(15)
                         VStack(spacing: 0) {
                             Button(action: {
-                                milestones.addMilestone = false
+                                steppingstones.addSteppingstone = false
                             }, label: {
                                 HStack {
                                     Rectangle()
@@ -48,11 +45,11 @@ struct AddMilestoneView: View {
                             })
                             .offset(y: -26)
                             .foregroundColor(.black)
-                            Text("Add Milestone")
+                            Text("Add Stepping Stone")
                                 .foregroundColor(.black)
-                                .font(Font.custom("Lato", size: 30))
+                                .font(Font.custom("Lato", size: 25))
                             VStack() {
-                                TextField("Milestone Name", text: $newName)
+                                TextField("Stepping Stone Name", text: $newName)
                                     .padding(.bottom, 10)
                                     .padding(.leading, 20)
                                     .padding(.top, 20)
@@ -72,41 +69,31 @@ struct AddMilestoneView: View {
                                 }
                                 
                                 HStack {
-                                    Picker(selection: $length, label: Text("")) {
-                                        ForEach(1 ..< 101) { index in
+                                    Text("Cycles:")
+                                    Picker(selection: $cycles, label: Text("")) {
+                                        ForEach(1 ..< 12) { index in
                                             if index-1 != 0 {
                                                 Text(String(index-1))
                                             }
                                         }
                                     }
-                                    .frame(width: 40, height: 80)
-                                    .clipped()
-                                    .padding(.trailing, 20)
-                                    
-                                    Picker(selection: $unit, label: Text("")) {
-                                        ForEach(units, id: \.self) {
-                                            Text($0)
-                                        }
-                                    }
-                                    .frame(width: 100, height: 80)
+                                    .frame(width: 40, height: 40)
                                     .clipped()
                                 }
                                 
                                 Button(action: {
                                     if newName.count <= 30 && description.count <= 100 && newName != "" {
-                                     if milestones.name != [] {
-                                         milestones.name.insert(newName, at: milestones.buttonIndex)
-                                         milestones.descriptions.insert(description, at: milestones.buttonIndex)
-                                         milestones.unit.insert(unit, at: milestones.buttonIndex)
-                                         milestones.length.insert(length, at: milestones.buttonIndex)
-                                         milestones.addMilestone = false
+                                        if !steppingstones.name.isEmpty {
+                                         steppingstones.name.insert(newName, at: steppingstones.buttonIndex)
+                                         steppingstones.descriptions.insert(description, at: steppingstones.buttonIndex)
+                                         steppingstones.cycles.insert(cycles, at: steppingstones.buttonIndex)
+                                         steppingstones.addSteppingstone = false
                                      }
                                      else {
-                                         milestones.name.append(newName)
-                                         milestones.descriptions.append(description)
-                                         milestones.unit.append(unit)
-                                         milestones.length.append(length)
-                                         milestones.addMilestone = false
+                                         steppingstones.name.append(newName)
+                                         steppingstones.descriptions.append(description)
+                                         steppingstones.cycles.append(cycles)
+                                         steppingstones.addSteppingstone = false
                                      }
                                  }
                                 }, label: {
@@ -125,14 +112,15 @@ struct AddMilestoneView: View {
                         }
                         .offset(y: 10)
                     }
-                    .frame(width: geometry.size.width - 150, height: geometry.size.height - 500)
+                    .frame(width: geometry.size.width - 150, height: geometry.size.height - 540)
                 }
             }
         }
 }
 
-struct AddMilestoneView_Previews: PreviewProvider {
+struct AddSteppingStoneView_Previews: PreviewProvider {
     static var previews: some View {
-        AddMilestoneView()
+        AddSteppingStoneView()
     }
 }
+*/

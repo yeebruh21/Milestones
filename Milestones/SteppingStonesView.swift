@@ -188,6 +188,7 @@ struct SteppingStonesView: View {
                     HStack {
                         List {
                             Text("MENU")
+                                .bold()
                             Text("MILESTONES").onTapGesture {
                                 self.viewNum = 1
                             }
