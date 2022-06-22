@@ -11,7 +11,7 @@ import SwiftUI
 struct MilestonesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Directions()
         }
     }
 }
