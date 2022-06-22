@@ -61,13 +61,13 @@
 		310CA406286297B100BA7B6F /* Milestones */ = {
 			isa = PBXGroup;
 			children = (
-				310CA41F2863503500BA7B6F /* Milestones Documentation */,
 				310CA407286297B100BA7B6F /* MilestonesApp.swift */,
 				310CA409286297B100BA7B6F /* MilestonesView.swift */,
 				310CA415286297F000BA7B6F /* AddMilestoneView.swift */,
 				310CA41B2862A66F00BA7B6F /* AddSteppingStoneView.swift */,
 				310CA4172862980C00BA7B6F /* SteppingStonesView.swift */,
 				310CA4192862983800BA7B6F /* MenuContent.swift */,
+				310CA41F2863503500BA7B6F /* Milestones Documentation */,
 				310CA40B286297BD00BA7B6F /* Assets.xcassets */,
 				310CA40D286297BD00BA7B6F /* Preview Content */,
 			);
