@@ -15,6 +15,7 @@
 		310CA4182862980C00BA7B6F /* SteppingStonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA4172862980C00BA7B6F /* SteppingStonesView.swift */; };
 		310CA41A2862983800BA7B6F /* MenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA4192862983800BA7B6F /* MenuContent.swift */; };
 		310CA41C2862A66F00BA7B6F /* AddSteppingStoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CA41B2862A66F00BA7B6F /* AddSteppingStoneView.swift */; };
+		310CA421286350E100BA7B6F /* Milestones.doccarchive in Resources */ = {isa = PBXBuildFile; fileRef = 310CA420286350E100BA7B6F /* Milestones.doccarchive */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		310CA4172862980C00BA7B6F /* SteppingStonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppingStonesView.swift; sourceTree = "<group>"; };
 		310CA4192862983800BA7B6F /* MenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContent.swift; sourceTree = "<group>"; };
 		310CA41B2862A66F00BA7B6F /* AddSteppingStoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSteppingStoneView.swift; sourceTree = "<group>"; };
+		310CA420286350E100BA7B6F /* Milestones.doccarchive */ = {isa = PBXFileReference; lastKnownFileType = file; path = Milestones.doccarchive; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		310CA406286297B100BA7B6F /* Milestones */ = {
 			isa = PBXGroup;
 			children = (
+				310CA41F2863503500BA7B6F /* Milestones Documentation */,
 				310CA407286297B100BA7B6F /* MilestonesApp.swift */,
 				310CA409286297B100BA7B6F /* MilestonesView.swift */,
 				310CA415286297F000BA7B6F /* AddMilestoneView.swift */,
@@ -77,6 +80,14 @@
 				310CA40E286297BD00BA7B6F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		310CA41F2863503500BA7B6F /* Milestones Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				310CA420286350E100BA7B6F /* Milestones.doccarchive */,
+			);
+			path = "Milestones Documentation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310CA421286350E100BA7B6F /* Milestones.doccarchive in Resources */,
 				310CA40F286297BD00BA7B6F /* Preview Assets.xcassets in Resources */,
 				310CA40C286297BD00BA7B6F /* Assets.xcassets in Resources */,
 			);
